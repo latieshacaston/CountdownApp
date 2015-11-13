@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Koq-ws-MW2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="L4e-N2-VT3">
+            <objects>
+                <navigationController id="Koq-ws-MW2" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="MO8-Qb-Q3h">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="S9T-t9-oKB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zFZ-b4-3hC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-298" y="455"/>
+        </scene>
+        <!--Countdowns-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No countdowns yet" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Uw-y4-ekK">
+                                <rect key="frame" x="229" y="208" width="143" height="58"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="16"/>
+                                <color key="textColor" red="0.87058823529411766" green="0.80000000000000004" blue="0.71372549019607845" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RZ9-UV-fXr">
+                                <rect key="frame" x="225" y="280" width="150" height="40"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.99607843137254903" green="0.40392156862745099" blue="0.47450980392156861" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="rxt-wp-1jH"/>
+                                    <constraint firstAttribute="width" constant="150" id="w5u-YC-dVa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="16"/>
+                                <state key="normal" title="Start one">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="xLd-ru-6Ba" kind="show" id="rgx-bf-bMP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.96862745098039216" green="0.95294117647058818" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="RZ9-UV-fXr" firstAttribute="top" secondItem="0Uw-y4-ekK" secondAttribute="bottom" constant="14" id="8kw-RP-Eow"/>
+                            <constraint firstItem="0Uw-y4-ekK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QCj-xN-9MX"/>
+                            <constraint firstItem="0Uw-y4-ekK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="144" id="XNf-C1-Gu1"/>
+                            <constraint firstItem="RZ9-UV-fXr" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="aWF-I1-Ebj"/>
+                            <constraint firstItem="RZ9-UV-fXr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hDP-cv-I4G"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Countdowns" id="rWK-BC-Kl6">
+                        <barButtonItem key="leftBarButtonItem" title="Menu" id="WHd-jO-JpP">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Uke-6y-OKa">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="xLd-ru-6Ba" kind="show" id="i2J-Lt-lxs"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="noCountdownsLabel" destination="0Uw-y4-ekK" id="jtA-mm-JeS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="393" y="455"/>
+        </scene>
+        <!--Create a Countdown-->
+        <scene sceneID="JwO-7W-Xtu">
+            <objects>
+                <viewController id="nLs-NV-nzj" customClass="CreateCountdownViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Brd-eh-6aY"/>
+                        <viewControllerLayoutGuide type="bottom" id="yb1-4a-WhT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7XU-x2-vqp">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="O0P-IR-W9M">
+                                <rect key="frame" x="150" y="135" width="300" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="560" id="OfG-4e-G90"/>
+                                    <constraint firstAttribute="height" constant="30" id="nm5-cU-Icm"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="yyW-h5-U9i"/>
+                                </constraints>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="OfG-4e-G90"/>
+                                        <exclude reference="yyW-h5-U9i"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular" misplaced="YES">
+                                    <rect key="frame" x="20" y="135" width="560" height="30"/>
+                                    <mask key="constraints">
+                                        <include reference="OfG-4e-G90"/>
+                                        <exclude reference="nm5-cU-Icm"/>
+                                        <include reference="yyW-h5-U9i"/>
+                                    </mask>
+                                </variation>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Qg-Kl-88f">
+                                <rect key="frame" x="150" y="106" width="42" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="14"/>
+                                <color key="textColor" red="0.99607843139999996" green="0.4039215686" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="O0P-IR-W9M" secondAttribute="trailing" constant="20" id="3i6-Pa-4oH"/>
+                            <constraint firstItem="4Qg-Kl-88f" firstAttribute="top" secondItem="Brd-eh-6aY" secondAttribute="bottom" constant="42" id="ELO-8B-4v2"/>
+                            <constraint firstAttribute="trailing" secondItem="O0P-IR-W9M" secondAttribute="trailing" constant="20" id="MpV-Pu-g3V"/>
+                            <constraint firstItem="4Qg-Kl-88f" firstAttribute="leading" secondItem="7XU-x2-vqp" secondAttribute="leadingMargin" constant="130" id="TtV-gV-RYk"/>
+                            <constraint firstItem="O0P-IR-W9M" firstAttribute="leading" secondItem="7XU-x2-vqp" secondAttribute="leading" constant="20" id="XXr-ut-boO"/>
+                            <constraint firstItem="O0P-IR-W9M" firstAttribute="leading" secondItem="7XU-x2-vqp" secondAttribute="leading" constant="20" id="YnG-Dj-ZIY"/>
+                            <constraint firstItem="O0P-IR-W9M" firstAttribute="top" secondItem="Brd-eh-6aY" secondAttribute="bottom" constant="71" id="cwY-dE-jJI"/>
+                            <constraint firstItem="O0P-IR-W9M" firstAttribute="leading" secondItem="4Qg-Kl-88f" secondAttribute="leading" id="eyX-Vq-UyJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="O0P-IR-W9M" secondAttribute="trailing" constant="130" id="sO0-Hv-v54"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="3i6-Pa-4oH"/>
+                                <exclude reference="MpV-Pu-g3V"/>
+                                <exclude reference="XXr-ut-boO"/>
+                                <exclude reference="YnG-Dj-ZIY"/>
+                                <exclude reference="sO0-Hv-v54"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular">
+                            <mask key="constraints">
+                                <include reference="3i6-Pa-4oH"/>
+                                <include reference="MpV-Pu-g3V"/>
+                                <include reference="XXr-ut-boO"/>
+                                <include reference="YnG-Dj-ZIY"/>
+                                <exclude reference="sO0-Hv-v54"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Create a Countdown" id="pbJ-4M-0Ca"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SGp-LM-pdX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1891" y="454.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="kpV-9u-OgF">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xLd-ru-6Ba" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="J6C-zP-oIl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="nLs-NV-nzj" kind="relationship" relationship="rootViewController" id="Zc7-e7-Nus"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9D6-6x-0CO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1079" y="455"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="rgx-bf-bMP"/>
+    </inferredMetricsTieBreakers>
+</document>
