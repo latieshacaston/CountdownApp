@@ -17,15 +17,23 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
+    // Customize navigation bar + fonts
     
     self.view.backgroundColor = [UIColor colorWithRed:247.0/255.0 green:243.0/255.0 blue:238.0/255.0 alpha:1];
     
-  //  UINavigationBar *mainNavigationBar = [[UINavigationBar alloc] init];
     
     self.navigationController.navigationBar.translucent = NO;
     
     self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:254.0/255.0 green:103.0/255.0 blue:121.0/255.0 alpha:1];
+    
+    [self.navigationController.navigationBar setTitleTextAttributes:
+     
+     @{NSForegroundColorAttributeName:[UIColor whiteColor],
+       NSFontAttributeName:[UIFont fontWithName:@"Avenir" size:15]
+  
+       
+       
+       }];
 
     
     

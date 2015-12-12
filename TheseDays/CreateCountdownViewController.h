@@ -8,6 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CreateCountdownViewController : UIViewController
+
+@interface CreateCountdownViewController : UIViewController 
+
+
+@property (weak, nonatomic) IBOutlet UIDatePicker *DatePicker;
+
+@property (weak, nonatomic) IBOutlet UILabel *selectedDate;
+
+- (IBAction)pickerAction:(id)sender;
+
+
 
 @end

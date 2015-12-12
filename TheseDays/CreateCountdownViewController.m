@@ -8,7 +8,10 @@
 
 #import "CreateCountdownViewController.h"
 
-@interface CreateCountdownViewController ()
+
+@interface CreateCountdownViewController () 
+
+@property (strong, nonatomic) UILabel *dateLabel;
 
 @end
 
@@ -20,16 +23,16 @@
     self.view.backgroundColor = [UIColor colorWithRed:247.0/255.0 green:243.0/255.0 blue:238.0/255.0 alpha:1];
     self.navigationItem.backBarButtonItem.style = UIBarButtonItemStylePlain;
     
-       self.navigationItem.backBarButtonItem.tintColor= [UIColor whiteColor];
+    self.navigationItem.backBarButtonItem.tintColor= [UIColor whiteColor];
     
     
     
     self.navigationController.navigationBar.translucent = NO;
     
     self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:254.0/255.0 green:103.0/255.0 blue:121.0/255.0 alpha:1];
+    self.DatePicker.backgroundColor = [UIColor whiteColor];
     
-    
-    
+   
     
     
 }
@@ -38,6 +41,9 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
+
 
 /*
 #pragma mark - Navigation
@@ -49,4 +55,16 @@
 }
 */
 
+- (IBAction)pickerAction:(id)sender {
+    
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateStyle:NSDateFormatterFullStyle];
+    [dateFormatter setTimeStyle:NSDateFormatterNoStyle];
+    
+    self.selectedDate.text = [dateFormatter stringFromDate:self.DatePicker.date];
+    
+    
+    
+    
+}
 @end
