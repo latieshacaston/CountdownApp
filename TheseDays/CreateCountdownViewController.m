@@ -7,18 +7,24 @@
 //
 
 #import "CreateCountdownViewController.h"
+#import "Countdown.h"
 
 
 @interface CreateCountdownViewController () 
 
-@property (strong, nonatomic) UILabel *dateLabel;
+
 
 @end
 
-@implementation CreateCountdownViewController
+@implementation CreateCountdownViewController {
+
+
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+ 
+    
     
     self.view.backgroundColor = [UIColor colorWithRed:247.0/255.0 green:243.0/255.0 blue:238.0/255.0 alpha:1];
     self.navigationItem.backBarButtonItem.style = UIBarButtonItemStylePlain;
@@ -45,17 +51,45 @@
 
 
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    // Check to make sure the done button was tapped
+    
+    if (sender != self.doneButton)  return;
+    
+    // Make sure the user has entered text;
+    
+    if (self.countdownTitle.text.length > 0 ) {
+        
+    // Create a new item
+        
+        self.countdownItem = [[Countdown alloc] init];
+        
+    // Set the title
+        
+        self.countdownItem.title = self.countdownTitle.text;
+        
+        // Set the date
+        
+        self.countdownItem.date = self.DatePicker.date;
+        
+    
+    
+    }
+    
+    
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
 }
-*/
+
 
 - (IBAction)pickerAction:(id)sender {
+    
+    
     
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setDateStyle:NSDateFormatterFullStyle];

@@ -11,16 +11,16 @@
 		7B276B591BF4733900E50B4F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B276B581BF4733900E50B4F /* AppDelegate.m */; };
 		7B276B5F1BF4733900E50B4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B276B5D1BF4733900E50B4F /* Main.storyboard */; };
 		7B276B611BF4733A00E50B4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B276B601BF4733A00E50B4F /* Assets.xcassets */; };
-		7B276B641BF4733A00E50B4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B276B621BF4733A00E50B4F /* LaunchScreen.storyboard */; };
 		7B276B6F1BF4733A00E50B4F /* TheseDaysTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B276B6E1BF4733A00E50B4F /* TheseDaysTests.m */; };
 		7B276B7A1BF4733A00E50B4F /* TheseDaysUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B276B791BF4733A00E50B4F /* TheseDaysUITests.m */; };
-		7B276B891BF58DA600E50B4F /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B276B881BF58DA600E50B4F /* MainViewController.m */; settings = {ASSET_TAGS = (); }; };
-		7B276B8C1BF58DF300E50B4F /* CreateCountdownViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B276B8B1BF58DF300E50B4F /* CreateCountdownViewController.m */; settings = {ASSET_TAGS = (); }; };
+		7B276B891BF58DA600E50B4F /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B276B881BF58DA600E50B4F /* MainViewController.m */; };
+		7B276B8C1BF58DF300E50B4F /* CreateCountdownViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B276B8B1BF58DF300E50B4F /* CreateCountdownViewController.m */; };
 		7B276B8E1BF97E3900E50B4F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B276B8D1BF97E3900E50B4F /* CoreGraphics.framework */; };
 		7B276B901BF97E3F00E50B4F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B276B8F1BF97E3F00E50B4F /* Foundation.framework */; };
 		7B276B921BF97E4400E50B4F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B276B911BF97E4400E50B4F /* UIKit.framework */; };
-		7B90ACCF1C1CB554002987C9 /* CountdownListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B90ACCE1C1CB554002987C9 /* CountdownListTableViewController.m */; settings = {ASSET_TAGS = (); }; };
-		7B90ACD21C1CB582002987C9 /* Countdown.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B90ACD11C1CB582002987C9 /* Countdown.m */; settings = {ASSET_TAGS = (); }; };
+		7B90ACCF1C1CB554002987C9 /* CountdownListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B90ACCE1C1CB554002987C9 /* CountdownListTableViewController.m */; };
+		7B90ACD21C1CB582002987C9 /* Countdown.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B90ACD11C1CB582002987C9 /* Countdown.m */; };
+		7BED2F951C1E25D00073F4B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BED2F941C1E25D00073F4B0 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +47,6 @@
 		7B276B581BF4733900E50B4F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		7B276B5E1BF4733900E50B4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7B276B601BF4733A00E50B4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		7B276B631BF4733A00E50B4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7B276B651BF4733A00E50B4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B276B6A1BF4733A00E50B4F /* TheseDaysTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheseDaysTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B276B6E1BF4733A00E50B4F /* TheseDaysTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TheseDaysTests.m; sourceTree = "<group>"; };
@@ -66,6 +65,7 @@
 		7B90ACCE1C1CB554002987C9 /* CountdownListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountdownListTableViewController.m; sourceTree = "<group>"; };
 		7B90ACD01C1CB582002987C9 /* Countdown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Countdown.h; sourceTree = "<group>"; };
 		7B90ACD11C1CB582002987C9 /* Countdown.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Countdown.m; sourceTree = "<group>"; };
+		7BED2F941C1E25D00073F4B0 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ../LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,9 +130,9 @@
 				7B90ACCE1C1CB554002987C9 /* CountdownListTableViewController.m */,
 				7B90ACD01C1CB582002987C9 /* Countdown.h */,
 				7B90ACD11C1CB582002987C9 /* Countdown.m */,
+				7BED2F941C1E25D00073F4B0 /* LaunchScreen.storyboard */,
 				7B276B5D1BF4733900E50B4F /* Main.storyboard */,
 				7B276B601BF4733A00E50B4F /* Assets.xcassets */,
-				7B276B621BF4733A00E50B4F /* LaunchScreen.storyboard */,
 				7B276B651BF4733A00E50B4F /* Info.plist */,
 				7B276B541BF4733900E50B4F /* Supporting Files */,
 			);
@@ -278,7 +278,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B276B641BF4733A00E50B4F /* LaunchScreen.storyboard in Resources */,
+				7BED2F951C1E25D00073F4B0 /* LaunchScreen.storyboard in Resources */,
 				7B276B611BF4733A00E50B4F /* Assets.xcassets in Resources */,
 				7B276B5F1BF4733900E50B4F /* Main.storyboard in Resources */,
 			);
@@ -352,14 +352,6 @@
 				7B276B5E1BF4733900E50B4F /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		7B276B621BF4733A00E50B4F /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7B276B631BF4733A00E50B4F /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -450,9 +442,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TheseDays/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.latieshacaston.TheseDays;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -461,9 +455,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TheseDays/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.latieshacaston.TheseDays;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

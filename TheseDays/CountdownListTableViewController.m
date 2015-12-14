@@ -7,8 +7,13 @@
 //
 
 #import "CountdownListTableViewController.h"
+#import "Countdown.h"
+#import "CreateCountdownViewController.h"
 
 @interface CountdownListTableViewController ()
+
+
+
 
 @end
 
@@ -17,12 +22,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.countdownTitles = [[NSMutableArray alloc] init];
+    self.countdownDates = [[NSMutableArray alloc] init];
+    
+    
+    
+    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
 }
+
+// CountownCell
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -32,24 +44,58 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+    return [self.countdownTitles count];
 }
 
-/*
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+
+- (IBAction)unwindToList:(UIStoryboardSegue *)segue {
     
-    // Configure the cell...
+    CreateCountdownViewController *sourceViewController = [segue sourceViewController];
+    
+    Countdown *countdown = sourceViewController.countdownItem;
+    Countdown *date = sourceViewController.DatePicker.date;
+    
+    if ( countdown !=nil) {
+    
+        [self.countdownTitles addObject:countdown];
+        [self.countdownDates addObject:date];
+        [self.tableView reloadData]; 
+    
+    }
+    
+    
+}
+
+
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"countdownCell" forIndexPath:indexPath];
+
+    
+    Countdown *countdownItem = [self.countdownTitles objectAtIndex:indexPath.row];
+    cell.textLabel.text = countdownItem.title;
+    
+    
+    // NSDate to NSString in order to display it as the deail text label
+    
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"MMMM dd, yyyy"];
+    NSString *stringDate = [dateFormatter stringFromDate:[countdownItem date]];
+    NSLog(@"%@", stringDate);
+    
+    
+    cell.detailTextLabel.text = stringDate; 
+
+    
     
     return cell;
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.

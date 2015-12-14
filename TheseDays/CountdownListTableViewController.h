@@ -10,4 +10,12 @@
 
 @interface CountdownListTableViewController : UITableViewController
 
+
+@property (strong, nonatomic) NSMutableArray *countdownTitles;
+@property (strong, nonatomic) NSMutableArray *countdownDates;
+
+
+- (IBAction)unwindToList:(UIStoryboardSegue *)segue;
+
+
 @end
